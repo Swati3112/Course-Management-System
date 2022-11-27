@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "eafcbd72-b720-4b67-9269-68b68c73bfdf",
+		"name": "User Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"swati3112\",\r\n    \"password\": \"swati3112\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Sakshi\",\r\n    \"lastName\" : \"Chauhan\",\r\n    \"email\" : \"sakshi@gmail.com\",\r\n    \"password\": \"sakshich\",\r\n    \"role\": [\"INSTRUCTOR\"],\r\n    \"userName\": \"sakshi30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzd2F0aTMxMTIiLCJpYXQiOjE2Njk1MzU5ODEsImV4cCI6MTY2OTUzOTU4MX0.LNOwB1ZfdsdQiyUxWzVQfIWOabInutwdy9CA6bdnVy84YdzN0mcj4t_u-lN7pvu6WJrqH2gYsy1OHpbhAp3N3g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Sakshi\",\r\n    \"lastName\" : \"Chauhan\",\r\n    \"email\" : \"sakshi@gmail.com\",\r\n    \"password\": \"sakshich\",\r\n    \"role\": [\"INSTRUCTOR\"],\r\n    \"userName\": \"sakshi30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/user/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"user",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzd2F0aTMxMTIiLCJpYXQiOjE2NjkzODQ1NjYsImV4cCI6MTY2OTM4ODE2Nn0.pphS5qWY_XwK6n_VCqUNLDfxUD9JKKLBs5P9Fvr54rAuiwFkA--ePoST36KggbNaBpP7lAeMWnV3PZxj9O4bTg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user details by user name",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzd2F0aTMxMTIiLCJpYXQiOjE2Njk1MzE0NjUsImV4cCI6MTY2OTUzNTA2NX0.ixTtTz18IpHXWAmoj78p-qA5Zukv5TueGB1i9ux5ZfDhPE-nR9PNQcXkHNGsjULQ0CQQlCXmBsZiE2YPpNEpfg"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/user/get-user-details-by-username/swati3112",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"user",
+						"get-user-details-by-username",
+						"swati3112"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

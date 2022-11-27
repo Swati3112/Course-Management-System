@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "2de01aac-e2d8-4e7c-bf25-f0e1b96b69cc",
+		"name": "Assignment Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all assignment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzd2F0aTMxMTIiLCJpYXQiOjE2NjkzOTI3NDEsImV4cCI6MTY2OTM5NjM0MX0.xBP7jl_FELET_2bPdlFsOUXDzdX6LMkU_0758-lvQPpvwTYck3AGDKNK9OdnhDlIvVvFECRFyBjKpR76Qu4SZg"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/assignment/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"assignment",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get assignment by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWtzaGkzMCIsImlhdCI6MTY2OTU0NDM5NSwiZXhwIjoxNjY5NTQ3OTk1fQ.-yVgqMjoFaidqDLJ9ElVwava97srYA2CDcO0tAyDieRj-GtAUeufdTqLSXu1JutEU3oGLhzqhvFlsZv8WLfqMg"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/assignment/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"assignment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create assignment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWtzaGkzMCIsImlhdCI6MTY2OTU0NDM5NSwiZXhwIjoxNjY5NTQ3OTk1fQ.-yVgqMjoFaidqDLJ9ElVwava97srYA2CDcO0tAyDieRj-GtAUeufdTqLSXu1JutEU3oGLhzqhvFlsZv8WLfqMg"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Java Assignment-3\",\r\n    \"course_id\": 5\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9191/assignment/createAssignment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"assignment",
+						"createAssignment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete assignment by id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWtzaGkzMCIsImlhdCI6MTY2OTU0NDM5NSwiZXhwIjoxNjY5NTQ3OTk1fQ.-yVgqMjoFaidqDLJ9ElVwava97srYA2CDcO0tAyDieRj-GtAUeufdTqLSXu1JutEU3oGLhzqhvFlsZv8WLfqMg"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/assignment/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"assignment",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update assignment by id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWtzaGkzMCIsImlhdCI6MTY2OTU0NDM5NSwiZXhwIjoxNjY5NTQ3OTk1fQ.-yVgqMjoFaidqDLJ9ElVwava97srYA2CDcO0tAyDieRj-GtAUeufdTqLSXu1JutEU3oGLhzqhvFlsZv8WLfqMg"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Java Assignment\",\r\n    \"course_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9191/assignment/update/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"assignment",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

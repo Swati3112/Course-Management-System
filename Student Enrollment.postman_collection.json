@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "3e2379cb-f646-4c3d-a708-9c7ee1666029",
+		"name": "Student Enrollment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Enroll for course",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWtzaGkzMCIsImlhdCI6MTY2OTU0Mzk4NywiZXhwIjoxNjY5NTQ3NTg3fQ.kCKpsFUHZHRzALUT4VfCcaLJ8olld5AKObGkb2SGA0T_9KZVXB7cgXj4NjoD-GdOoMTWsRS8MIqMwxLLJgUOkg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseAssignmentIDs\": [1,2],\r\n    \"studentUserName\": \"sakshi1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/enroll/course",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"enroll",
+						"course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enroll for assignment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWtzaGkzMCIsImlhdCI6MTY2OTU0Mzk4NywiZXhwIjoxNjY5NTQ3NTg3fQ.kCKpsFUHZHRzALUT4VfCcaLJ8olld5AKObGkb2SGA0T_9KZVXB7cgXj4NjoD-GdOoMTWsRS8MIqMwxLLJgUOkg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"courseAssignmentIDs\": [1,2],\r\n    \"studentUserName\": \"sakshi1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/enroll/assignment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"enroll",
+						"assignment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Course or Assignment by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzYWtzaGkzMCIsImlhdCI6MTY2OTU0NDM5NSwiZXhwIjoxNjY5NTQ3OTk1fQ.-yVgqMjoFaidqDLJ9ElVwava97srYA2CDcO0tAyDieRj-GtAUeufdTqLSXu1JutEU3oGLhzqhvFlsZv8WLfqMg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9191/enroll/student-details-by-enrollment-no/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"enroll",
+						"student-details-by-enrollment-no",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
