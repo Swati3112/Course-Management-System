@@ -1,0 +1,4 @@
+INSERT INTO "assignment" ( "title", "created", "course_id", "created_by") VALUES ('Java Assignment', {ts '2012-11-22 18:47:52.69'}, 1, 'swati3112');
+INSERT INTO "assignment" ( "title", "created", "course_id", "created_by") VALUES ('Python Assignment', {ts '2012-11-22 18:47:52.69'}, 2, 'swati3112');
+INSERT INTO "assignment" ( "title", "created", "course_id", "created_by") VALUES ('SpringBoot Assignment', {ts '2012-11-22 18:47:52.69'}, 3, 'lovely606');
+INSERT INTO "assignment" ( "title", "created", "course_id", "created_by") VALUES ('Hibernate Assignment', {ts '2012-11-22 18:47:52.69'}, 4, 'lovely606');
